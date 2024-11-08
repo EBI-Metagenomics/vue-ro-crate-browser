@@ -1,0 +1,42 @@
+{
+  "name": "vue-ro-crate-browser",
+  "version": "0.0.1",
+  "description": "A Vue.js package for browsing self-contained RO-Crates",
+  "main": "dist/vue-ro-crate-browser.umd.js",
+  "module": "dist/vue-ro-crate-browser.es.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-ro-crate-browser.es.js",
+      "require": "./dist/vue-ro-crate-browser.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["ro-crates", "ro crates", "vue", "vue component"],
+  "author": "Mahfouz Shehu",
+  "license": "MIT",
+  "dependencies": {
+    "flowbite": "^2.5.2",
+    "flowbite-vue": "^0.1.6",
+    "jszip": "^3.10.1",
+    "ro-crate": "^3.4.2",
+    "vue": "^3.5.12"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.10",
+    "vue-tsc": "^2.1.8"
+  }
+}
